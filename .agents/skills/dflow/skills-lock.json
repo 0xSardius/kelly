@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "kalshi-docs": {
+      "source": "ammario/kalshi-docs",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "db18cdf8d485825ddb0262127dbe0bc92fee129bc46ce49e94946d73228edecd"
+    }
+  }
+}

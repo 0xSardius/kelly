@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "dflow": {
+      "source": "sendaifun/skills",
+      "sourceType": "github",
+      "skillPath": "skills/dflow/SKILL.md",
+      "computedHash": "3c063f4aee3b67fc545c8265ec3209874dc53545db4dca3a986f057c1873018e"
+    }
+  }
+}

@@ -47,11 +47,12 @@ Tooling: `vitest` with `@cloudflare/vitest-pool-workers` (runs tests inside work
 - [ ] `KalshiDemoProvider.listMarkets` + RSA-PSS request signing (or SDK) + a smoke test.
 
 **Owner (Justin) tasks — only you can do these:**
-- [ ] Register Kalshi demo account, create API Key ID + RSA private key.
-- [ ] Register Builder Code (mechanism confirmed in research pass).
+- [ ] Register Kalshi demo account at demo.kalshi.co, create API Key ID + RSA private key.
+- [ ] **Request DFlow production API key NOW** — critical path, 2–5 business-day SLA (Google Form via pond.dflow.net/get-started/api-key + email hello@dflow.net stating prediction-markets use). The keyless dev tier was withdrawn mid-2026; nothing DFlow-side works without it. See assumptions.md for what to ask for.
+- [ ] Generate the agent Solana keypair (dedicated, never reused), then **complete Proof KYC for that wallet** at dflow.net/proof — DFlow blocks outcome-token buys for unverified wallets. Needed by Phase 4 but KYC + key SLA make it worth starting early.
 - [ ] Cloudflare account ready; `wrangler login`; create D1 database.
 - [ ] Anthropic API key; dedicated RPC provider key (Helius/QuickNode) — needed by Phase 4, fine to defer.
-- [ ] Generate the agent Solana keypair (dedicated, never reused) — needed by Phase 4.
+- ~~Register Builder Code~~ — no such API mechanism exists (see assumptions.md §Builder Codes): monetization is `platformFeeScale`/`feeAccount` + per-key rebates on DFlow, and the grants program at kalshi.com/builders.
 
 **Accept:** `wrangler dev` runs; migrations apply; `KalshiDemoProvider.listMarkets` smoke test returns live demo markets.
 

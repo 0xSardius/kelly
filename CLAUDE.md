@@ -6,7 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Kelly** — an autonomous prediction market trading agent. It trades tokenized Kalshi markets on Solana (via DFlow), runs a deterministic favorite-longshot-fade (FLF) strategy with an LLM veto/sizing layer, and records every judgment in a hash-chained, tamper-evident ledger.
 
-The product was drafted under the working title "SolOracle" — any reference to SolOracle means Kelly. The authoritative spec is `docs/PRD.md`; execute it phase-by-phase (Phase 0 → 5), treating each phase's acceptance criteria as the merge checklist. Record any API/doc reality that contradicts the PRD in `docs/assumptions.md`.
+The product was drafted under the working title "SolOracle" — any reference to SolOracle means Kelly. The authoritative spec is `docs/PRD.md`; execute it phase-by-phase (Phase 0 → 5), treating each phase's acceptance criteria as the merge checklist. **Where `docs/assumptions.md` (Phase 0 verification, 2026-08-21) contradicts the PRD, assumptions.md wins** — it records live-API reality (fixed-point dollar fields, V2 order endpoint, DFlow key gating, KYC requirement, etc.).
+
+Reference skills: `.agents/skills/kalshi-docs` is a nightly mirror of official Kalshi docs — trust it. `.agents/skills/dflow` (sendaifun) is **partly stale** (wrong Metadata base URL, invented WS shape/endpoints) — for DFlow, code from `docs/assumptions.md` and github.com/DFlowProtocol/cookbook instead.
 
 ## Hard invariants (do not violate)
 
